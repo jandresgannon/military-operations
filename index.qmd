@@ -18,11 +18,11 @@ editor: visual
 execute:
   echo: false
   warning: false
-  cache: true
+  cache: false
 ---
 
 
-```{r knitr_options, echo = FALSE, warning = FALSE, cache = FALSE}
+```{r knitr_options}
 library(knitr)
 library(kableExtra)
 library(magrittr)
