@@ -29,7 +29,7 @@ library(ggplot2)
 
 This page contains the data as ready to use csv files. Replication code used for MONSTr and all related publications is publicly available at our downloadable github repository.
 
-[![csv](images/image-1053309457.png){fig-align="left" width="113"}](/data/MONSTr.csv)
+[![csv](images/image-1053309457.png){fig-align="left" width="113"}](/content/data/MONSTr.csv)
 
 [![Github Repo](images/image-1960859350.png){fig-align="left" width="113"}](https://github.com/jandresgannon/MONSTr)
 
