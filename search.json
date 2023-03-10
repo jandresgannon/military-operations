@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "index.html#fine-grained-data-on-us-military-operations",
-    "href": "index.html#fine-grained-data-on-us-military-operations",
-    "title": "Military Operations",
-    "section": "Fine-grained data on US military operations",
-    "text": "Fine-grained data on US military operations\nScraping wikidata and DBpedia, we identify a number of covariates about US military operations since 1989, including their location, participants, start and end date, and military means the US used."
-  },
-  {
-    "objectID": "index.html#structure-relationships",
-    "href": "index.html#structure-relationships",
-    "title": "Military Operations",
-    "section": "Structure relationships",
-    "text": "Structure relationships\nWe also identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred."
-  },
-  {
     "objectID": "content/data.html",
     "href": "content/data.html",
     "title": "Data",
     "section": "",
-    "text": "All data and code used for MONSTr and all related publications is publicly available at our downloadable github repository here. CSV files are also located here, for simplicity.\nMONSTr\n\n[csv](../data/MONSTr.csv)"
-  },
-  {
-    "objectID": "content/papers.html",
-    "href": "content/papers.html",
-    "title": "Papers",
-    "section": "",
-    "text": "A Wiki-based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)\nJ Andrés Gannon and Kerry Chávez\nAbstract: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants—domestic, international, geographic, temporal—of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data’s contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.\nFighting in the War Room: Domestic Political Constraints and Suboptimal Military Strategies\nKerry Chávez and J Andrés Gannon\nAbstract: The traditional theory of democratic victory depicts democracies as superior warfighters because of their stringent selection into war and battlefield effectiveness. This finding does not seem to hold in unconventional contexts, which are increasingly common in the modern era. Existing literature cites military myopia, a cultural argument, and capital-rich force structures, an economic hypothesis. Both assume a flawed elite and fail to explain important variation in how democracies prosecute unconventional wars. We introduce a theory that combines the strategic incentives and constraints of political and military leaders to explain the conditions under which they select suboptimal strategies. Using original data on all US militarized interventions since 1989, we demonstrate that domestic political constraints constrict military planners to risk-mitigating strategies through high technology. High-tech approaches are usually poor counterstrategies in unconventional conflicts, resulting in not only reduced progress but retrogression of political objectives, even loss. This contributes to the literatures on the domestic politics of war, elite dynamics, and US foreign policy by examining the linkages between the public, elites, and international adversaries to provide a more comprehensive explanation for variation in the use of military force.\nThe Whole Package: The Tailoring of US Force Structure Combinations in Modern Warfare\nKerry Chávez and J Andrés Gannon\nAbstract: Research on force structures in modern warfare is prolific, but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, few studies consider them in conjunction. Meanwhile, modern warfare features an increasingly broad spectrum of combatants and technologies. With civil war now constituting more than 90% of contemporary armed clashes, diverse nonstate actors regularly contest state powers through terrorism, insurgency, and irregular warfare. Yet interstate wars endure and great power competition persists, compelling states to prepare for these higher-stakes antagonisms accordingly. As a result, advanced modern militaries are cross-pressured to equip and train for dramatically dissimilar security threats. At the same time, political leaders face domestic constraints to avert risks and costs. The United States, with a sharp qualitative military edge and enemies ranging from ragtag rebels to global powerhouses, is a paragon of this challenge. In this paper, we analyze US force structure combinations by their commonness and context. Leveraging original data on the means of force used in all US military interventions from 1989 to 2019, we describe and explain how war planners tailor applications of force to balance military efficacy with domestic and resource constraints."
+    "text": "MONSTr\n\n[csv](../data/MONSTr.csv)"
   },
   {
     "objectID": "content/about.html",
@@ -39,14 +18,21 @@
     "href": "content/about.html#research-assistants",
     "title": "About",
     "section": "Research Assistants",
-    "text": "Research Assistants"
+    "text": "Research Assistants\n\n\n\nTom Brailey\n\n\n\n\n\nZoe Coutlakis\n\n\n\n\n\nAllison Lilley\n\n\n\n\n\nAmanda Madany\n\n\n\n\n\nChristie Marquez\n\n\n\n\n\nDavid McCrum\n\n\n\n\n\nJordan Merkel\n\n\n\n\n\nMatthew Miltimore\n\n\n\n\n\nPeyton Olszowka\n\n\n\n\n\nCole Reynolds\n\n\n\n\n\nCaitlen Rodriquez\n\n\n\n\n\nYiyi “Effie” Sun\n\n\n\n\n\nQitao Wu\n\n\n\n\n\nLisa Yen"
   },
   {
     "objectID": "content/about.html#financial-and-administrative-support",
     "href": "content/about.html#financial-and-administrative-support",
     "title": "About",
     "section": "Financial and Administrative Support",
-    "text": "Financial and Administrative Support"
+    "text": "Financial and Administrative Support\nThe authors are grateful to the following institutions and their directors for financial, administrative, and technical support.\n\n\n\nUC San Diego, Center for Peace and Security Studies\n\n\n\n\n\nDepartment of Defense, Minerva Initiative\n\n\n\n\n\nAPSA Centennial Center\n\n\n\n\n\nUC San Diego, Undergraduate Research Apprenticeship Program"
+  },
+  {
+    "objectID": "content/codebook.html",
+    "href": "content/codebook.html",
+    "title": "Codebook",
+    "section": "",
+    "text": "TBD. Link to codebook here."
   },
   {
     "objectID": "content/publishing.html",
@@ -77,10 +63,24 @@
     "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings > Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
   },
   {
-    "objectID": "content/codebook.html",
-    "href": "content/codebook.html",
-    "title": "Codebook",
+    "objectID": "content/papers.html",
+    "href": "content/papers.html",
+    "title": "Papers",
     "section": "",
-    "text": "TBD. Link to codebook here."
+    "text": "J Andrés Gannon and Kerry Chávez\nAbstract: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants—domestic, international, geographic, temporal—of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data’s contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.\nFighting in the War Room: Domestic Political Constraints and Suboptimal Military Strategies\nKerry Chávez and J Andrés Gannon\nAbstract: The traditional theory of democratic victory depicts democracies as superior warfighters because of their stringent selection into war and battlefield effectiveness. This finding does not seem to hold in unconventional contexts, which are increasingly common in the modern era. Existing literature cites military myopia, a cultural argument, and capital-rich force structures, an economic hypothesis. Both assume a flawed elite and fail to explain important variation in how democracies prosecute unconventional wars. We introduce a theory that combines the strategic incentives and constraints of political and military leaders to explain the conditions under which they select suboptimal strategies. Using original data on all US militarized interventions since 1989, we demonstrate that domestic political constraints constrict military planners to risk-mitigating strategies through high technology. High-tech approaches are usually poor counterstrategies in unconventional conflicts, resulting in not only reduced progress but retrogression of political objectives, even loss. This contributes to the literatures on the domestic politics of war, elite dynamics, and US foreign policy by examining the linkages between the public, elites, and international adversaries to provide a more comprehensive explanation for variation in the use of military force.\nThe Whole Package: The Tailoring of US Force Structure Combinations in Modern Warfare\nKerry Chávez and J Andrés Gannon\nAbstract: Research on force structures in modern warfare is prolific, but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, few studies consider them in conjunction. Meanwhile, modern warfare features an increasingly broad spectrum of combatants and technologies. With civil war now constituting more than 90% of contemporary armed clashes, diverse nonstate actors regularly contest state powers through terrorism, insurgency, and irregular warfare. Yet interstate wars endure and great power competition persists, compelling states to prepare for these higher-stakes antagonisms accordingly. As a result, advanced modern militaries are cross-pressured to equip and train for dramatically dissimilar security threats. At the same time, political leaders face domestic constraints to avert risks and costs. The United States, with a sharp qualitative military edge and enemies ranging from ragtag rebels to global powerhouses, is a paragon of this challenge. In this paper, we analyze US force structure combinations by their commonness and context. Leveraging original data on the means of force used in all US military interventions from 1989 to 2019, we describe and explain how war planners tailor applications of force to balance military efficacy with domestic and resource constraints."
+  },
+  {
+    "objectID": "index.html#fine-grained-data-on-us-military-operations",
+    "href": "index.html#fine-grained-data-on-us-military-operations",
+    "title": "Military Operations",
+    "section": "Fine-grained data on US military operations",
+    "text": "Fine-grained data on US military operations\nScraping wikidata and DBpedia, we identify a number of covariates about US military operations since 1989, including their location, participants, start and end date, and military means the US used."
+  },
+  {
+    "objectID": "index.html#structure-relationships",
+    "href": "index.html#structure-relationships",
+    "title": "Military Operations",
+    "section": "Structure relationships",
+    "text": "Structure relationships\nWe also identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred."
   }
 ]
