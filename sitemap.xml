@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/index.html</loc>
-    <lastmod>2023-03-09T18:38:31.561Z</lastmod>
+    <loc>https://military-operations.com/index.html</loc>
+    <lastmod>2023-03-10T16:34:04.253Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/customizing.html</loc>
-    <lastmod>2023-03-09T18:38:33.621Z</lastmod>
+    <loc>https://military-operations.com/content/data.html</loc>
+    <lastmod>2023-03-10T16:34:05.377Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/rendering.html</loc>
-    <lastmod>2023-03-09T18:38:33.977Z</lastmod>
+    <loc>https://military-operations.com/content/papers.html</loc>
+    <lastmod>2023-03-10T16:34:05.833Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/add-content.html</loc>
-    <lastmod>2023-03-09T18:38:34.325Z</lastmod>
+    <loc>https://military-operations.com/content/about.html</loc>
+    <lastmod>2023-03-10T16:34:06.273Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/publishing.html</loc>
-    <lastmod>2023-03-09T18:38:34.693Z</lastmod>
+    <loc>https://military-operations.com/content/publishing.html</loc>
+    <lastmod>2023-03-10T16:34:06.681Z</lastmod>
   </url>
   <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/rmarkdown.html</loc>
-    <lastmod>2023-03-09T18:38:36.189Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/code.html</loc>
-    <lastmod>2023-03-09T18:38:37.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nmfs-opensci.github.io/NOAA-quarto-simple/content/acknowledgements.html</loc>
-    <lastmod>2023-03-09T18:38:37.609Z</lastmod>
+    <loc>https://military-operations.com/content/codebook.html</loc>
+    <lastmod>2023-03-10T16:34:07.045Z</lastmod>
   </url>
 </urlset>

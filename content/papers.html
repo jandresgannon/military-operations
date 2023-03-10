@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Military Operations - Publishing</title>
+<title>Military Operations - Papers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/data.html" rel="next">
+<link href="../content/about.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Publishing</h1>
+      <h1 class="quarto-secondary-nav-title">Papers</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -108,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/papers.html" class="sidebar-item-text sidebar-link">Papers</a>
+  <a href="../content/papers.html" class="sidebar-item-text sidebar-link active">Papers</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -126,22 +128,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#turn-on-github-pages-for-your-repo" id="toc-turn-on-github-pages-for-your-repo" class="nav-link active" data-scroll-target="#turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</a></li>
-  <li><a href="#do-your-first-publish-to-gh-pages" id="toc-do-your-first-publish-to-gh-pages" class="nav-link" data-scroll-target="#do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></a></li>
-  <li><a href="#dont-like-using-gh-pages" id="toc-dont-like-using-gh-pages" class="nav-link" data-scroll-target="#dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jandresgannon/military-operations/edit/main/content/publishing.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/jandresgannon/military-operations/blob/main/content/publishing.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/jandresgannon/military-operations/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Publishing</h1>
+<h1 class="title d-none d-lg-block">Papers</h1>
 </div>
 
 
@@ -156,93 +150,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>To get your Quarto webpage to show up with the url</p>
-<pre><code>yourname.github.io/yourrepo</code></pre>
-<p>you have a few steps.</p>
-<section id="turn-on-github-pages-for-your-repo" class="level2">
-<h2 class="anchored" data-anchor-id="turn-on-github-pages-for-your-repo">Turn on GitHub Pages for your repo</h2>
-<ul>
-<li>Turn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.</li>
-<li>Turn on GitHub Actions under Settings &gt; Actions &gt; General</li>
-</ul>
-<p>The GitHub Action will automatically recreate your website when you push to GitHub <strong>after</strong> you do the initial <code>gh-pages</code> set-up</p>
-</section>
-<section id="do-your-first-publish-to-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="do-your-first-publish-to-gh-pages">Do your first publish to <code>gh-pages</code></h2>
-<p>The first time you publish to <code>gh-pages</code>, you need to do so locally.</p>
-<ul>
-<li>On your local computer, open a terminal window and <code>cd</code> to your repo directory. Here is what that <code>cd</code> command looks like for me. You command will look different because your local repo will be somewhere else on your computer.</li>
-</ul>
-<pre><code>cd ~/Documents/GitHub/NOAA-quarto-simple</code></pre>
-<ul>
-<li>Publish to the <code>gh-pages</code>. In the terminal type</li>
-</ul>
-<pre><code>quarto publish gh-pages</code></pre>
-<p>This is going to render your webpage and then push the <code>_site</code> contents to the <code>gh-pages</code> branch.</p>
-</section>
-<section id="dont-like-using-gh-pages" class="level2">
-<h2 class="anchored" data-anchor-id="dont-like-using-gh-pages">Don’t like using <code>gh-pages</code>?</h2>
-<p>In some cases, you don’t want your website on the <code>gh-pages</code> branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the <code>gh-pages</code> branch.</p>
-<p>Here are the changes you need to make if you to avoid <code>gh-pages</code> branch.</p>
-<ul>
-<li>At the top of <code>_quarto.yml</code> add the following:</li>
-</ul>
-<pre><code>project: 
-  type: website
-  output-dir: docs</code></pre>
-<ul>
-<li>On GitHub under Settings &gt; Pages set pages to be made from the <code>main</code> branch and the docs directory.</li>
-<li>Make sure <code>docs</code> is not listed in <code>.gitignore</code></li>
-<li>Publish the site the first time locally using <code>quarto publish</code> from the terminal</li>
-<li>Change the GitHub Action because you can’t use <code>quarto publish gh-pages</code>. You’ll need to push to the main branch yourself (in the GitHub Action)</li>
-</ul>
-<pre><code>on:
-  push:
-    branches: main
-
-name: Render and Publish
-
-jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v2 
-        
-      - name: Set up R (needed for Rmd)
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Install packages (needed for Rmd)
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite"))'
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          # tinytex: true 
-          # uncomment below and fill to pin a version
-          # version: 0.9.600
-      
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
-
-      - name: Set up Git
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-
-      - name: Commit all changes and push
-        run: |
-          git add -A &amp;&amp; git commit -m 'Build site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"</code></pre>
+<p><strong>A Wiki-based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)</strong></p>
+<p>J Andrés Gannon and Kerry Chávez</p>
+<p><u>Abstract</u>: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants—domestic, international, geographic, temporal—of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data’s contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.</p>
+<p><strong>Fighting in the War Room: Domestic Political Constraints and Suboptimal Military Strategies</strong></p>
+<p>Kerry Chávez and J Andrés Gannon</p>
+<p><u>Abstract</u>: The traditional theory of democratic victory depicts democracies as superior warfighters because of their stringent selection into war and battlefield effectiveness. This finding does not seem to hold in unconventional contexts, which are increasingly common in the modern era. Existing literature cites military myopia, a cultural argument, and capital-rich force structures, an economic hypothesis. Both assume a flawed elite and fail to explain important variation in how democracies prosecute unconventional wars. We introduce a theory that combines the strategic incentives and constraints of political and military leaders to explain the conditions under which they select suboptimal strategies. Using original data on all US militarized interventions since 1989, we demonstrate that domestic political constraints constrict military planners to risk-mitigating strategies through high technology. High-tech approaches are usually poor counterstrategies in unconventional conflicts, resulting in not only reduced progress but retrogression of political objectives, even loss. This contributes to the literatures on the domestic politics of war, elite dynamics, and US foreign policy by examining the linkages between the public, elites, and international adversaries to provide a more comprehensive explanation for variation in the use of military force.</p>
+<p><strong>The Whole Package: The Tailoring of US Force Structure Combinations in Modern Warfare</strong></p>
+<p>Kerry Chávez and J Andrés Gannon</p>
+<p><u>Abstract</u>: Research on force structures in modern warfare is prolific, but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, few studies consider them in conjunction. Meanwhile, modern warfare features an increasingly broad spectrum of combatants and technologies. With civil war now constituting more than 90% of contemporary armed clashes, diverse nonstate actors regularly contest state powers through terrorism, insurgency, and irregular warfare. Yet interstate wars endure and great power competition persists, compelling states to prepare for these higher-stakes antagonisms accordingly. As a result, advanced modern militaries are cross-pressured to equip and train for dramatically dissimilar security threats. At the same time, political leaders face domestic constraints to avert risks and costs. The United States, with a sharp qualitative military edge and enemies ranging from ragtag rebels to global powerhouses, is a paragon of this challenge. In this paper, we analyze US force structure combinations by their commonness and context. Leveraging original data on the means of force used in all US military interventions from 1989 to 2019, we describe and explain how war planners tailor applications of force to balance military efficacy with domestic and resource constraints.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -493,6 +411,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/about.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/data.html" class="pagination-link">
+        <span class="nav-page-text">Data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
