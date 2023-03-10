@@ -1,9 +1,43 @@
 ---
 title: Data
+format:
+  html:
+    toc: true
+    toc-location: right
+    html-math-method: katex
+    css: styles.css
+    citations-hover: true
+    footnotes-hover: true
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  cache: true
 ---
 
-All data and code used for MONSTr and all related publications is publicly available at our downloadable github repository [here](https://github.com/jandresgannon/MONSTr). CSV files are also located here, for simplicity.
+```{r knitr_options, echo = FALSE, warning = FALSE, cache = FALSE}
+library(knitr)
+library(kableExtra)
+library(magrittr)
+library(ggplot2)
+```
 
-MONSTr
+This page contains the data as ready to use csv files. Replication code used for MONSTr and all related publications is publicly available at our downloadable github repository.
 
--   \[csv\](../data/MONSTr.csv)
+[![csv](images/image-1053309457.png){fig-align="left" width="113"}](/data/MONSTr.csv)
+
+[![Github Repo](images/image-1960859350.png){fig-align="left" width="113"}](https://github.com/jandresgannon/MONSTr)
+
+## Data sample
+
+Below is an interactive version of the tabular data that you can sort and filter.
+
+```{r}
+read.csv(paste0(here::here(), "/content/data/","MONSTr.csv")) %>%
+  DT::datatable()
+```

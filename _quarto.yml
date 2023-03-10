@@ -3,7 +3,7 @@ project:
 
 website: 
   page-navigation: true
-  title: "Military Operations"
+  title: "MONSTr"
   site-url: "https://military-operations.com" 
   repo-url: "https://github.com/jandresgannon/military-operations"
   repo-actions: [edit, source, issue]

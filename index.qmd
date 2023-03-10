@@ -1,6 +1,5 @@
 ---
-title: "Military Operations"
-subtitle: "A webpage for the Military Operations with Novel Strategic Technologies (MONSTr) Dataset"
+title: "Military Operations with Novel Strategic Technologies (MONSTr) Dataset"
 page-layout: full
 format:
   html:

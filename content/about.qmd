@@ -6,32 +6,23 @@ page-layout: full
 
 ## Project Directors
 
-Kerry Chávez
-
+::: {layout="[[30,70], [30,70]]"}
 ![](images/image-966861216.png){width="187"}
 
-Kerry Chávez is an instructor in the [Department of Political Science](https://www.depts.ttu.edu/politicalscience/) at [Texas Tech University](https://www.ttu.edu/), where she completed my PhD in the summer of 2022. She is also a [non-resident fellow](https://mwi.usma.edu/research-fellows/kerry-chavez/) with the [Modern War Institute](https://mwi.usma.edu/about-3/) at West Point and a projects director at the [Peace, War, and Social Conflict Lab](https://www.pwscl.com/).
+[Kerry Chávez](https://kerrychavez.us/) is an instructor in the [Department of Political Science](https://www.depts.ttu.edu/politicalscience/) at [Texas Tech University](https://www.ttu.edu/), where she completed my PhD in the summer of 2022. She is also a [non-resident fellow](https://mwi.usma.edu/research-fellows/kerry-chavez/) with the [Modern War Institute](https://mwi.usma.edu/about-3/) at West Point and a projects director at the [Peace, War, and Social Conflict Lab](https://www.pwscl.com/).\
+[![](images/image-913165350.png){width="70"}](https://scholar.google.com/citations?user=c2GBgDgAAAAJ&hl=en) [![](images/image-597146610.png){width="47"}](https://www.linkedin.com/in/kerry-ch%C3%A1vez-b35a43bb/) [![](images/image-1865313780.png){width="43"}](mailto:kerry.chavez@ttu.edu)
 
--   [Web](https://kerrychavez.us/)
--   [Google Scholar](https://scholar.google.com/citations?user=c2GBgDgAAAAJ&hl=en)
--   [Linkedin](https://www.linkedin.com/in/kerry-ch%C3%A1vez-b35a43bb/)
--   [Email](kerry.chavez@ttu.edu)
+![](images/image-1982633316.png){width="184"}
 
-Andrés Gannon
-
-![](images/image-1982633316.png){width="172"}
-
-J Andrés Gannon is a [Stanton Nuclear Security Fellow](https://www.cfr.org/fellowships/stanton-nuclear-security-fellowship) at the [Council on Foreign Relations](https://www.cfr.org/). Starting Fall 2023, he will be an Assistant Professor of [Political Science at Vanderbilt University](https://www.vanderbilt.edu/political-science/) and a Faculty Affiliate at the [Data Science Institute](https://www.vanderbilt.edu/datascience/). He earned his PhD in [[Political Science]{.underline}](http://polisci.ucsd.edu/) from UC San Diego in 2021.
-
--   [Web](https://jandresgannon.com/)
--   [Google Scholar](https://scholar.google.com/citations?user=81aHcOgAAAAJ&hl=en)
--   [Linkedin](https://www.linkedin.com/in/j-andres-gannon-14906850/)
--   [Email](andres.gannon@gmail.com)
--   [Twitter](https://twitter.com/AndresGannon)
+[J Andrés Gannon](https://jandresgannon.com/) is a [Stanton Nuclear Security Fellow](https://www.cfr.org/fellowships/stanton-nuclear-security-fellowship) at the [Council on Foreign Relations](https://www.cfr.org/). Starting Fall 2023, he will be an Assistant Professor of [Political Science at Vanderbilt University](https://www.vanderbilt.edu/political-science/) and a Faculty Affiliate at the [Data Science Institute](https://www.vanderbilt.edu/datascience/). He earned his PhD in [[Political Science]{.underline}](http://polisci.ucsd.edu/) from UC San Diego in 2021.\
+[![](images/image-913165350.png){width="69"}](https://scholar.google.com/citations?user=81aHcOgAAAAJ&hl=en) [![](images/image-597146610.png){width="46"}](https://www.linkedin.com/in/j-andres-gannon-14906850/) [![](images/image-1865313780.png){width="41"}](mailto:andres.gannon@gmail.com)
+[![](images/image-1960859350.png){width="43"}](https://github.com/jandresgannon) [![](images/image-1576385032.png){width="51"}](https://twitter.com/AndresGannon) 
+:::
 
 ## Research Assistants
 
-[![Tom Brailey](images/brailey_tom.jpeg){fig-align="left" width="98"}](https://tjbrailey.netlify.app/about/)
+::: {layout-ncol="3"}
+![Thomas Brailey](images/image-1120673759.png){fig-align="left"}
 
 ![Zoe Coutlakis](images/image-614059313.png){fig-align="left" width="206"}
 
@@ -51,22 +42,33 @@ J Andrés Gannon is a [Stanton Nuclear Security Fellow](https://www.cfr.org/fell
 
 ![Cole Reynolds](images/reynolds_cole.jpeg){fig-align="left"}
 
-![Caitlen Rodriquez](images/rodriguez_cailen.jpg){fig-align="left" width="190"}
+![Caitlen Rodriquez](images/rodriguez_cailen.jpg){fig-align="left" width="140"}
 
-![Yiyi "Effie" Sun](images/sun_effie.jpeg){fig-align="left" width="169"}
+![Yiyi "Effie" Sun](images/sun_effie.jpeg){fig-align="left" width="136"}
 
 ![Qitao Wu](images/wu_qitao.jpeg){fig-align="left"}
 
 ![Lisa Yen](images/yen_lisa.jpeg){fig-align="left"}
+:::
 
 ## Financial and Administrative Support
 
 The authors are grateful to the following institutions and their directors for financial, administrative, and technical support.
 
-[![UC San Diego, Center for Peace and Security Studies](images/image-1221567181.png){fig-align="left"}](https://cpass.ucsd.edu/)
+::: {layout-ncol="2"}
+[![UCSD Center for Peace and Security Studies](images/image-1221567181.png){fig-align="left"}](https://cpass.ucsd.edu/)
 
-![Department of Defense, Minerva Initiative](images/image-2039311418.png){fig-align="left"}
+![UCSD Undergraduate Research Apprenticeship Program](images/image-1405746600.png){fig-align="left" width="349"}
 
-[![APSA Centennial Center](images/image-1745550880.png){fig-align="left" width="246"}](https://connect.apsanet.org/centennialcenter/)
+![DoD Minerva Initiative](images/image-2039311418.png){fig-align="left"}
 
-![UC San Diego, Undergraduate Research Apprenticeship Program](images/image-1405746600.png){fig-align="left" width="394"}
+[![APSA Centennial Center](images/image-1745550880.png){fig-align="left" width="206"}](https://connect.apsanet.org/centennialcenter/)
+:::
+
+This project is dedicated to its namesake, [Monster](https://www.instagram.com/monsterthefurocious/), without whom it would have been completed 12 months earlier.
+
+::: {layout-ncol="2"}
+![](images/image-1145822599.png){fig-align="center" width="290"}
+
+![](images/image-667619106.png){fig-align="center" width="289"}
+:::

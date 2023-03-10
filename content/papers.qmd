@@ -1,82 +1,53 @@
 ---
 title: Papers
-editor: 
-  markdown: 
-    wrap: 72
+format:
+  html:
+    toc: true
+    toc-location: right
+    html-math-method: katex
+    css: styles.css
+    citations-hover: true
+    footnotes-hover: true
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  cache: true
 ---
 
-**A Wiki-based Dataset of Military Operations with Novel Strategic
-Technologies (MONSTr)**
+**A Wiki-based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)**
 
 J Andrés Gannon and Kerry Chávez
 
-[Abstract]{.underline}: Research on strategies and force structures in
-modern warfare is prolific but siloed. While some examine boots on the
-ground, others focus on aerial bombing or unmanned platforms.
-Consequently, most studies focus on the effects of one approach, seldom
-considering it in lieu of or conjunction with others. Furthermore, there
-is less knowledge on the origins and implementations of these strategic
-choices analyzed in isolation. The primary reason for these gaps lies
-with data limitations. In this paper, we introduce the first
-comprehensive dataset on the universe of US military interventions from
-1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a
-database query language, we offer unprecedented coverage and granularity
-that enables analysis of myriad determinants---domestic, international,
-geographic, temporal---of how states fight. The data are also nested,
-providing opportunities to model interventions in the strategic
-campaigns and operations in which they were planned. We describe and
-demonstrate the data's contents and utility, then suggest how the novel,
-fine-grained information can contribute to theories about the effects of
-technological innovation on international conflict.
+*Revise & Resubmit*
 
-**Fighting in the War Room: Domestic Political Constraints and
-Suboptimal Military Strategies**
+[Abstract]{.underline}: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants---domestic, international, geographic, temporal---of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data's contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.
+
+::: {layout-ncol="3"}
+[![Pre-print](images/image-1124748587.png){fig-align="left" width="55"}](/files/2023-03-04_MONSTr.pdf)
+
+[![Appendix](images/image-1124748587.png){alt="Paper" fig-align="left" width="55"}](/files/2023-03-04_MONSTr_Appendix.pdf)
+
+[![Repo](images/image-1960859350.png){alt="Github Repo" fig-align="left" width="55"}](https://github.com/jandresgannon/MONSTr)
+:::
+
+**Fighting in the War Room: Domestic Political Constraints and Suboptimal Military Strategies**
 
 Kerry Chávez and J Andrés Gannon
 
-[Abstract]{.underline}: The traditional theory of democratic victory
-depicts democracies as superior warfighters because of their stringent
-selection into war and battlefield effectiveness. This finding does not
-seem to hold in unconventional contexts, which are increasingly common
-in the modern era. Existing literature cites military myopia, a cultural
-argument, and capital-rich force structures, an economic hypothesis.
-Both assume a flawed elite and fail to explain important variation in
-how democracies prosecute unconventional wars. We introduce a theory
-that combines the strategic incentives and constraints of political and
-military leaders to explain the conditions under which they select
-suboptimal strategies. Using original data on all US militarized
-interventions since 1989, we demonstrate that domestic political
-constraints constrict military planners to risk-mitigating strategies
-through high technology. High-tech approaches are usually poor
-counterstrategies in unconventional conflicts, resulting in not only
-reduced progress but retrogression of political objectives, even loss.
-This contributes to the literatures on the domestic politics of war,
-elite dynamics, and US foreign policy by examining the linkages between
-the public, elites, and international adversaries to provide a more
-comprehensive explanation for variation in the use of military force.
+*Working paper*
 
-**The Whole Package: The Tailoring of US Force Structure Combinations in
-Modern Warfare**
+[Abstract]{.underline}: The traditional theory of democratic victory depicts democracies as superior warfighters because of their stringent selection into war and battlefield effectiveness. This finding does not seem to hold in unconventional contexts, which are increasingly common in the modern era. Existing literature cites military myopia, a cultural argument, and capital-rich force structures, an economic hypothesis. Both assume a flawed elite and fail to explain important variation in how democracies prosecute unconventional wars. We introduce a theory that combines the strategic incentives and constraints of political and military leaders to explain the conditions under which they select suboptimal strategies. Using original data on all US militarized interventions since 1989, we demonstrate that domestic political constraints constrict military planners to risk-mitigating strategies through high technology. High-tech approaches are usually poor counterstrategies in unconventional conflicts, resulting in not only reduced progress but retrogression of political objectives, even loss. This contributes to the literatures on the domestic politics of war, elite dynamics, and US foreign policy by examining the linkages between the public, elites, and international adversaries to provide a more comprehensive explanation for variation in the use of military force.
+
+**The Whole Package: The Tailoring of US Force Structure Combinations in Modern Warfare**
 
 Kerry Chávez and J Andrés Gannon
 
-[Abstract]{.underline}: Research on force structures in modern warfare
-is prolific, but siloed. While some examine boots on the ground, others
-focus on aerial bombing or unmanned platforms. Consequently, few studies
-consider them in conjunction. Meanwhile, modern warfare features an
-increasingly broad spectrum of combatants and technologies. With civil
-war now constituting more than 90% of contemporary armed clashes,
-diverse nonstate actors regularly contest state powers through
-terrorism, insurgency, and irregular warfare. Yet interstate wars endure
-and great power competition persists, compelling states to prepare for
-these higher-stakes antagonisms accordingly. As a result, advanced
-modern militaries are cross-pressured to equip and train for
-dramatically dissimilar security threats. At the same time, political
-leaders face domestic constraints to avert risks and costs. The United
-States, with a sharp qualitative military edge and enemies ranging from
-ragtag rebels to global powerhouses, is a paragon of this challenge. In
-this paper, we analyze US force structure combinations by their
-commonness and context. Leveraging original data on the means of force
-used in all US military interventions from 1989 to 2019, we describe and
-explain how war planners tailor applications of force to balance
-military efficacy with domestic and resource constraints.
+*Working paper*
+
+[Abstract]{.underline}: Research on force structures in modern warfare is prolific, but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, few studies consider them in conjunction. Meanwhile, modern warfare features an increasingly broad spectrum of combatants and technologies. With civil war now constituting more than 90% of contemporary armed clashes, diverse nonstate actors regularly contest state powers through terrorism, insurgency, and irregular warfare. Yet interstate wars endure and great power competition persists, compelling states to prepare for these higher-stakes antagonisms accordingly. As a result, advanced modern militaries are cross-pressured to equip and train for dramatically dissimilar security threats. At the same time, political leaders face domestic constraints to avert risks and costs. The United States, with a sharp qualitative military edge and enemies ranging from ragtag rebels to global powerhouses, is a paragon of this challenge. In this paper, we analyze US force structure combinations by their commonness and context. Leveraging original data on the means of force used in all US military interventions from 1989 to 2019, we describe and explain how war planners tailor applications of force to balance military efficacy with domestic and resource constraints.
