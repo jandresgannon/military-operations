@@ -4,8 +4,8 @@ project:
 website: 
   page-navigation: true
   title: "Military Operations"
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
+  site-url: "https://military-operations.com" 
+  repo-url: "https://github.com/jandresgannon/military-operations"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
@@ -15,17 +15,8 @@ website:
   
   sidebar:
     background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
-    favicon: images/favicon.ico
     pinned: true
     align: center
-    tools: 
-      - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
-      - icon: github
-        href: https://github.com/nmfs-opensci
-        text: "NMFS OpenSci"
 
     style: "docked"
     search: true
@@ -33,18 +24,14 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: content/add-content.qmd
-        text: Add content
-      - href: content/customizing.qmd
-        text: Customizing
-      - href: content/rendering.qmd
-        text: Rendering
-      - href: content/rmarkdown.Rmd
-        text: R Markdown files
-      - href: content/code.qmd
-        text: Code in your files
-      - href: content/acknowledgements.qmd
-        text: Acknowledgements
+      - href: content/about.qmd
+        text: About
+      - href: content/papers.qmd
+        text: Papers
+      - href: content/data.qmd
+        text: Data
+      - href: content/codebook.qmd
+        text: Codebook
 
 format:
   html:

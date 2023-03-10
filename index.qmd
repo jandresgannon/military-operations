@@ -2,12 +2,137 @@
 title: "Military Operations"
 subtitle: "A webpage for the Military Operations with Novel Strategic Technologies (MONSTr) Dataset"
 page-layout: full
+format:
+  html:
+    title-block-banner: true
+    toc: true
+    toc-location: right
+    html-math-method: katex
+    css: styles.css
+    citations-hover: true
+    footnotes-hover: true
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  cache: true
 ---
 
-This is a template for a simple Quarto website that looks like a "book". This is a common format for documentation. It includes a GitHub Action that will build the website automatically when you make changes to the files. The NOAA palette and fonts has been added to `theme.scss`. The webpage will be on the `gh-pages` branch. Serving the website files from this branch is a common way to keep all the website files from cluttering your main branch. 
 
-The GitHub Action installs R so you can have R code in your qmd or Rmd files. Note, you do not need to make changes to your Rmd files unless your need Quarto features like cross-references.
+```{r knitr_options, echo = FALSE, warning = FALSE, cache = FALSE}
+library(knitr)
+library(kableExtra)
+library(magrittr)
+library(ggplot2)
+```
 
-## GitHub Set-up
+```{r}
+# Prep data
+## Load main data
+df <- read.csv(paste0(here::here(), "/content/data/","MONSTr.csv"))
+```
 
-* Edit the repo description and Readme to add a link to the webpage. When you edit the description, you will see the link url in the url box or you can click on the Actions tab or the  Settings > Pages page to find the url.
+## Fine-grained data on US military operations
+
+Scraping wikidata and DBpedia, we identify a number of covariates about US military operations since 1989, including their location, participants, start and end date, and military means the US used.
+
+```{r}
+# Prep actors for the map
+## Load raw dbpedia data that includes all actors
+df_dbpedia <- read.csv(paste0(here::here(), "/content/data/","02a_interventions_newdata_dbpedia.csv")) %>%
+  dplyr::select(wikidata_id, belligerent_sideA, belligerent_sideB) %>%
+  dplyr::rename(belligerent1 = belligerent_sideA,
+                belligerent2 = belligerent_sideB) %>%
+  dplyr::distinct()
+
+df_sideA <- df_dbpedia %>%
+  dplyr::select(wikidata_id, belligerent1) %>%
+  dplyr::distinct() %>%
+  dplyr::group_by(wikidata_id) %>%
+  dplyr::mutate(sideA = paste(belligerent1, collapse = ", ")) %>%
+  dplyr::ungroup() %>%
+  dplyr::select(wikidata_id, sideA) %>%
+  dplyr::distinct()
+
+df_sideB <- df_dbpedia %>%
+  dplyr::select(wikidata_id, belligerent2) %>%
+  dplyr::distinct() %>%
+  dplyr::group_by(wikidata_id) %>%
+  dplyr::mutate(sideB = paste(belligerent2, collapse = ", ")) %>%
+  dplyr::ungroup() %>%
+  dplyr::select(wikidata_id, sideB) %>%
+  dplyr::distinct()
+
+df <- dplyr::left_join(df, df_sideA)
+df <- dplyr::left_join(df, df_sideB)
+
+df_sf <- df %>% dplyr::filter(!is.na(lat)) %>%
+  dplyr::filter(!is.na(lon))
+
+## New column for means used
+df_sf$means_aerialbombinglab[df_sf$means_aerialbombing == 1] <- "aerial bombing"
+df_sf$means_airtoairlab[df_sf$means_airtoair == 1] <- "air to air"
+df_sf$means_closeairsupportlab[df_sf$means_closeairsupport == 1] <- "close air support"
+df_sf$means_cruisemissileslab[df_sf$means_cruisemissiles == 1] <- "cruise missiles"
+df_sf$means_droneslab[df_sf$means_drones == 1] <- "drone strikes"
+df_sf$means_groundtroopslab[df_sf$means_groundtroops == 1] <- "ground troops"
+df_sf$means_paramilitarylab[df_sf$means_paramilitary == 1] <- "paramilitary"
+
+df_sf$meanslab <- paste0(df_sf$means_aerialbombinglab, ", ", 
+                         df_sf$means_airtoairlab, ", ", 
+                         df_sf$means_closeairsupportlab, ", ", 
+                         df_sf$means_cruisemissileslab, ", ", 
+                         df_sf$means_droneslab, ", ", 
+                         df_sf$means_groundtroopslab, ", ", 
+                         df_sf$means_paramilitarylab)
+
+# Delete NA and ", ," and padding
+df_sf$meanslab <- gsub("NA, ", "", df_sf$meanslab)
+df_sf$meanslab <- gsub(", NA", "", df_sf$meanslab)
+
+# Create pop up label
+## Pop up formatting
+sep <- "<br>"
+close_sep <- "</br>"
+str_open <- "<strong>"
+str_close <- "</strong>"
+
+## Create label column
+df_sf$label <- paste0(sep, str_open, "Operation: ", str_close, df_sf$wikidata_name, close_sep, 
+                      sep, str_open, "Part of: ", str_close, df_sf$parent_name, close_sep, 
+                      sep, str_open, "Dates: ", str_close, df_sf$start_date, " to ", df_sf$end_date, close_sep,
+                      sep, str_open, "Side A: ", str_close, df_sf$sideA, close_sep,
+                      sep, str_open, "Side B: ", str_close, df_sf$sideB, close_sep,
+                      sep, str_open, "Means: ", str_close, df_sf$meanslab, close_sep)
+
+# Coerce to sf object
+df_sf <- sf::st_as_sf(df_sf, coords = c("lon", "lat"))
+
+# Calculate center for view
+center_lon <- mean(df$lon, na.rm = TRUE)
+center_lat <- mean(df$lat, na.rm = TRUE)
+
+# Plot with leaflet
+leaflet::leaflet() %>%
+  leaflet::addTiles() %>%
+  leaflet::addCircleMarkers(data = df_sf, popup = df_sf$label, clusterOptions = leaflet::markerClusterOptions()) %>%
+  leaflet::setView(center_lon, center_lat, zoom = 2)
+```
+
+## Structure relationships
+
+We also identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.
+
+```{r}
+read.csv(paste0(here::here(),"/content/data/tree_ops.csv")) %>%
+  dplyr::filter(stringr::str_detect(row_operation, "_Q")) %>%
+  dplyr::mutate(dplyr::across(everything(), stringr::str_remove_all, pattern = '_.*')) %>%
+  collapsibleTree::collapsibleTree(hierarchy = c("level_2", "level_3", "level_4", "level_5", "level_6", "level_7", "level_8", "level_9"), 
+                                   height = 20000, width = 8000, 
+                                   collapse = FALSE, zoomable = FALSE)
+```
