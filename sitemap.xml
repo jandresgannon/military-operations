@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/data.html</loc>
-    <lastmod>2023-03-10T19:55:52.254Z</lastmod>
+    <loc>https://military-operations.com/index.html</loc>
+    <lastmod>2023-03-10T19:59:00.697Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/about.html</loc>
-    <lastmod>2023-03-10T19:55:52.602Z</lastmod>
+    <loc>https://military-operations.com/content/data.html</loc>
+    <lastmod>2023-03-10T19:59:01.901Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/codebook.html</loc>
-    <lastmod>2023-03-10T19:55:52.890Z</lastmod>
+    <loc>https://military-operations.com/content/papers.html</loc>
+    <lastmod>2023-03-10T19:59:02.545Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/publishing.html</loc>
-    <lastmod>2023-03-10T19:55:53.178Z</lastmod>
+    <loc>https://military-operations.com/content/about.html</loc>
+    <lastmod>2023-03-10T19:59:02.985Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/papers.html</loc>
-    <lastmod>2023-03-10T19:55:53.678Z</lastmod>
+    <loc>https://military-operations.com/content/publishing.html</loc>
+    <lastmod>2023-03-10T19:59:03.357Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/index.html</loc>
-    <lastmod>2023-03-10T19:55:54.106Z</lastmod>
+    <loc>https://military-operations.com/content/codebook.html</loc>
+    <lastmod>2023-03-10T19:59:03.697Z</lastmod>
   </url>
 </urlset>
