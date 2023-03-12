@@ -18,6 +18,7 @@ execute:
   echo: false
   warning: false
   cache: true
+bibliography: citations.bib
 ---
 
 # Free knowledge for one and all
