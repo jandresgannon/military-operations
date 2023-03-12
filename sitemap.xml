@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/data.html</loc>
-    <lastmod>2023-03-12T20:59:22.927Z</lastmod>
+    <loc>https://military-operations.com/index.html</loc>
+    <lastmod>2023-03-12T21:08:09.762Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/existingdata.html</loc>
-    <lastmod>2023-03-12T20:59:23.499Z</lastmod>
+    <loc>https://military-operations.com/content/data.html</loc>
+    <lastmod>2023-03-12T21:08:11.154Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/about.html</loc>
-    <lastmod>2023-03-12T20:59:23.847Z</lastmod>
+    <loc>https://military-operations.com/content/existingdata.html</loc>
+    <lastmod>2023-03-12T21:08:12.022Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/codebook.html</loc>
-    <lastmod>2023-03-12T20:59:24.115Z</lastmod>
+    <loc>https://military-operations.com/content/papers.html</loc>
+    <lastmod>2023-03-12T21:08:12.742Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/publishing.html</loc>
-    <lastmod>2023-03-12T20:59:24.427Z</lastmod>
+    <loc>https://military-operations.com/content/about.html</loc>
+    <lastmod>2023-03-12T21:08:13.274Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/content/papers.html</loc>
-    <lastmod>2023-03-12T20:59:24.903Z</lastmod>
+    <loc>https://military-operations.com/content/publishing.html</loc>
+    <lastmod>2023-03-12T21:08:13.726Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/jandresgannon/military-operations/index.html</loc>
-    <lastmod>2023-03-12T20:59:25.311Z</lastmod>
+    <loc>https://military-operations.com/content/codebook.html</loc>
+    <lastmod>2023-03-12T21:08:14.126Z</lastmod>
   </url>
 </urlset>
