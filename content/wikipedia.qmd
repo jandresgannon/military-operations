@@ -1,0 +1,41 @@
+---
+title: Why and how wikipedia?
+format:
+  html:
+    toc: true
+    toc-location: right
+    html-math-method: katex
+    css: styles.css
+    citations-hover: true
+    footnotes-hover: true
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  cache: true
+---
+
+# Free knowledge for one and all
+
+Created in 2007 as a way to crowd-source information, Wikipedia contains even more information than reaches the typical readers' eyes.
+
+Behind wikipedia are two structured Resource Description Framework (RDF) databases called wikidata and dbpedia. Each have nice properties like identifying every wikipedia page to a unique numeric ID and structuring each page's relationship to other pages.
+
+![](images/image-2012101505.png)
+
+We scraped these two components of wikipedia for all pages on US military operations after 1989 and were able to use wikidata and dbpedia (which is based on the infoboxes at the top of each page) to create a machine-readable spreadsheet of relevant information about each event as well as the relationship between events.
+
+::: {layout-ncol="2"}
+![](images/image-183880313.png)
+
+![](images/image-1707628848.png){width="326"}
+:::
+
+The resulting MONSTr is publicly available here. Initially a proof of concept of the viability and utility of using wikipedia to automate the process of structuring data about international events, future iterations of this particular project will investigate interventions further back in time and by actors other than the United States.
+
+For a broader project looking at wikipedia's coverage of named entities and all types of conflict, see @douglass_connectingconflictdata_2022.

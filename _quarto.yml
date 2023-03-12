@@ -26,12 +26,14 @@ website:
         text: Home
       - href: content/about.qmd
         text: About Us
+      - href: content/wikipedia.qmd
+        text: Why and how wikipedia
+      - href: content/existingdata.qmd
+        text: Uses
       - href: content/papers.qmd
         text: Papers
       - href: content/data.qmd
         text: Data
-      - href: content/existingdata.qmd
-        text: How to use
 
 format:
   html:

@@ -32,6 +32,8 @@ library(ggplot2)
 
 MONSTr is designed to augment existing military intervention datasets by disaggregating US military interventions into their component military operations. Doing so produces new fine-grained variables that can be combined with the existing datasets to answer important questions.
 
+![](images/image-644961682.png)
+
 MONSTr is fully interoperable with the following existing datasets:
 
 1.  International Military Interventions (IMI) [@pearson_internationalmilitaryintervention_1993; @kisangani_internationalmilitaryintervention_2008; @pickering_internationalmilitaryintervention_2009]

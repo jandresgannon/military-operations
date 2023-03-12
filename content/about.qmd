@@ -41,7 +41,7 @@ page-layout: full
 
 ![Cole Reynolds](images/reynolds_cole.jpeg){fig-align="left"}
 
-![Caitlen Rodriquez](images/rodriguez_cailen.jpg){fig-align="left" width="140"}
+![Cailen Rodriquez](images/rodriguez_cailen.jpg){fig-align="left" width="140"}
 
 ![Yiyi "Effie" Sun](images/sun_effie.jpeg){fig-align="left" width="136"}
 
