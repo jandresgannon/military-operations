@@ -4,7 +4,7 @@
     "href": "content/wikipedia.html",
     "title": "Why and how wikipedia?",
     "section": "",
-    "text": "Created in 2007 as a way to crowd-source information, Wikipedia contains even more information than reaches the typical readers’ eyes.\nBehind wikipedia are two structured Resource Description Framework (RDF) databases called wikidata and dbpedia. Each have nice properties like identifying every wikipedia page to a unique numeric ID and structuring each page’s relationship to other pages.\n\nWe scraped these two components of wikipedia for all pages on US military operations after 1989 and were able to use wikidata and dbpedia (which is based on the infoboxes at the top of each page) to create a machine-readable spreadsheet of relevant information about each event as well as the relationship between events.\n\n\n\n\n\n\n\n\n\n\nThe resulting MONSTr is publicly available here. Initially a proof of concept of the viability and utility of using wikipedia to automate the process of structuring data about international events, future iterations of this particular project will investigate interventions further back in time and by actors other than the United States.\nFor a broader project looking at wikipedia’s coverage of named entities and all types of conflict, see @douglass_connectingconflictdata_2022."
+    "text": "References\n\nDouglass, Rex W., Thomas Leo Scherer, J Andrés Gannon, and Erik A. Gartzke. 2022. “Connecting Conflict Data Through Wikimedia.”"
   },
   {
     "objectID": "content/data.html",
