@@ -21,7 +21,6 @@ execute:
   cache: false
 ---
 
-
 ```{r knitr_options}
 library(knitr)
 library(kableExtra)
@@ -35,9 +34,13 @@ library(ggplot2)
 df <- read.csv(paste0(here::here(), "/content/data/","MONSTr.csv"))
 ```
 
-## Fine-grained data on US military operations
+## Purpose
 
-Scraping wikidata and DBpedia, we identify a number of covariates about US military operations since 1989, including their location, participants, start and end date, and military means the US used.
+This website introduces a comprehensive dataset on the universe of United States military operations from 1989-2021 from a single source: Wikipedia. Using automated extraction techniques on its two structured knowledge databases$-$Wikidata and DBpedia$-$we uncover information about individual operations within nearly every post-1989 military intervention described in existing academic datasets. The data we introduce offers unprecedented coverage and granularity that enables analysis of myriad factors associated with when, where, and how the United States employs military force.
+
+MONSTr covers operation-level events occurring within the auspices of a military intervention. Each observation thus represents:
+
+*A series of tactical actions (battles, engagements, strikes) conducted by combat forces in an operational theater to achieve strategic or campaign objectives in the context of a political issue or dispute through action against a foreign adversary. Routine military movements and operations without a defined target like military training exercises, the routine forward deployment of military troops, non-combatant evacuation operations, and disaster relief are excluded.*
 
 ```{r}
 # Prep actors for the map
@@ -120,17 +123,4 @@ leaflet::leaflet() %>%
   leaflet::addTiles() %>%
   leaflet::addCircleMarkers(data = df_sf, popup = df_sf$label, clusterOptions = leaflet::markerClusterOptions()) %>%
   leaflet::setView(center_lon, center_lat, zoom = 2)
-```
-
-## Structure relationships
-
-We also identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.
-
-```{r}
-read.csv(paste0(here::here(),"/content/data/tree_ops.csv")) %>%
-  dplyr::filter(stringr::str_detect(row_operation, "_Q")) %>%
-  dplyr::mutate(dplyr::across(everything(), stringr::str_remove_all, pattern = '_.*')) %>%
-  collapsibleTree::collapsibleTree(hierarchy = c("level_2", "level_3", "level_4", "level_5", "level_6", "level_7", "level_8", "level_9"), 
-                                   height = 20000, width = 8000, 
-                                   collapse = FALSE, zoomable = FALSE)
 ```

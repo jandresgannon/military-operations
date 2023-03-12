@@ -1,0 +1,54 @@
+---
+title: Use with existing datasets
+format:
+  html:
+    toc: true
+    toc-location: right
+    html-math-method: katex
+    css: styles.css
+    citations-hover: true
+    footnotes-hover: true
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  cache: true
+bibliography: citations.bib
+---
+
+```{r knitr_options}
+library(knitr)
+library(kableExtra)
+library(magrittr)
+library(ggplot2)
+```
+
+## Disaggregating military interventions
+
+MONSTr is designed to augment existing military intervention datasets by disaggregating US military interventions into their component military operations. Doing so produces new fine-grained variables that can be combined with the existing datasets to answer important questions.
+
+MONSTr is fully interoperable with the following existing datasets:
+
+1.  International Military Interventions (IMI) [@pearson_internationalmilitaryintervention_1993; @kisangani_internationalmilitaryintervention_2008; @pickering_internationalmilitaryintervention_2009]
+
+2.  Military Interventions by Powerful States (MIPS) [@sullivan_militaryinterventionpowerful_2009]
+
+3.  Military Interventions Project (MIP) [@kushi_introducingmilitaryintervention_2022]
+
+4.  RAND Report on Characteristics of Successful U.S. Military Interventions [@kavanagh_characteristicssuccessfulmilitary_2019]
+
+We identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.
+
+```{r}
+read.csv(paste0(here::here(),"/content/data/tree_ops.csv")) %>%
+  dplyr::filter(stringr::str_detect(row_operation, "_Q")) %>%
+  dplyr::mutate(dplyr::across(everything(), stringr::str_remove_all, pattern = '_.*')) %>%
+  collapsibleTree::collapsibleTree(hierarchy = c("level_2", "level_3", "level_4", "level_5", "level_6", "level_7", "level_8", "level_9"), 
+                                   height = 20000, width = 8000, 
+                                   collapse = FALSE, zoomable = FALSE)
+```

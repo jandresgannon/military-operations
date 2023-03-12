@@ -2,8 +2,8 @@
 title: Data
 format:
   html:
-    toc: true
-    toc-location: right
+    page-layout: full
+    toc: false
     html-math-method: katex
     css: styles.css
     citations-hover: true
@@ -29,15 +29,51 @@ library(ggplot2)
 
 This page contains the data as ready to use csv files. Replication code used for MONSTr and all related publications is publicly available at our downloadable github repository.
 
+::: {layout-ncol="2"}
 [![csv](images/image-1053309457.png){fig-align="left" width="113"}](/content/data/MONSTr.csv)
 
 [![Github Repo](images/image-1960859350.png){fig-align="left" width="113"}](https://github.com/jandresgannon/MONSTr)
+:::
 
-## Data sample
-
-Below is an interactive version of the tabular data that you can sort and filter.
+Below is an interactive version of the full data that is searchable, sortable, and downloadable.
 
 ```{r}
 read.csv(paste0(here::here(), "/content/data/","MONSTr.csv")) %>%
-  DT::datatable()
+  dplyr::select(wikidata_name, parent_name,
+                year, start_date, end_date,
+                duration, daysinto_parent,
+                dplyr::starts_with("means_"),
+                allycount1,
+                sideB_state_count, sideB_nonstate_all_count,
+                lat, lon,
+                urban, forested, mountainous,
+                dplyr::starts_with("casualties_")) %>%
+  DT::datatable(colnames = c('Operation', 'Parent',
+                             'Year', 'Start', 'End', 'Duration (days)', 'Days into parent',
+                             'Drones', 'Air to air', 'Cruise missiles', 'Aerial bombing', 'Close air support', 'Ground troops', 'Paramil',
+                             'US allies',
+                             'State targets', 'Non-state targets',
+                             'Latitude', 'Longitude',
+                             'Urban', 'Forest', 'Mountain',
+                             'Side A casualties', 'Side B casualties', 'Civilian casualties', 'US casualties'),
+                filter = 'top',
+                extensions = c('Buttons',
+                               'FixedColumns',
+                               'FixedHeader',
+                               'Scroller'),
+                options = list(order = list(list(2, 'asc')),
+                               autoWidth = TRUE,
+                               dom = 'Bfrtip',
+                               buttons = c('copy', 'csv', 'pdf'),
+                               scrollX = TRUE,
+                               fixedColumns = list(leftColumns = 2),
+                               fixedHeader = TRUE,
+                               deferRender = TRUE,
+                               scrollY = 300,
+                               scroller = TRUE),
+                class = 'cell-border stripe') %>%
+  DT::formatStyle(c('year', 'start_date', 'end_date', 'duration', 'daysinto_parent'),  backgroundColor = 'orange') %>%
+  DT::formatStyle(c('means_drones', 'means_airtoair', 'means_cruisemissiles', 'means_aerialbombing', 'means_closeairsupport', 'means_groundtroops', 'means_paramilitary'),  backgroundColor = 'lightblue') %>%
+  DT::formatStyle(c('lat', 'lon', 'urban', 'forested', 'mountainous'),  backgroundColor = 'lightgreen')
+
 ```

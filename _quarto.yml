@@ -25,13 +25,13 @@ website:
       - href: index.qmd
         text: Home
       - href: content/about.qmd
-        text: About
+        text: About Us
       - href: content/papers.qmd
         text: Papers
       - href: content/data.qmd
         text: Data
-      - href: content/codebook.qmd
-        text: Codebook
+      - href: content/existingdata.qmd
+        text: How to use
 
 format:
   html:
