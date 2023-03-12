@@ -1,1 +1,1 @@
-Sitemap: https://military-operations.com/sitemap.xml
+Sitemap: https://github.com/jandresgannon/military-operations/sitemap.xml
