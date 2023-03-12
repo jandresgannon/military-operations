@@ -7,7 +7,7 @@ page-layout: full
 ## Project Directors
 
 ::: {layout="[[30,70], [30,70]]"}
-![](images/image-966861216.png){width="187"}
+![](images/Kerry%20Portrait%20Session_77.JPG){width="184"}
 
 [Kerry Chávez](https://kerrychavez.us/) is an instructor in the [Department of Political Science](https://www.depts.ttu.edu/politicalscience/) at [Texas Tech University](https://www.ttu.edu/), where she completed her PhD in the summer of 2022. She is also a [Non-resident Fellow](https://mwi.usma.edu/research-fellows/kerry-chavez/) with the [Modern War Institute](https://mwi.usma.edu/about-3/) at West Point and a projects director at the [Peace, War, and Social Conflict Lab](https://www.pwscl.com/).\
 [![](images/image-913165350.png){width="70"}](https://scholar.google.com/citations?user=c2GBgDgAAAAJ&hl=en) [![](images/image-597146610.png){width="47"}](https://www.linkedin.com/in/kerry-ch%C3%A1vez-b35a43bb/) [![](images/image-1865313780.png){width="43"}](mailto:kerry.chavez@ttu.edu)
@@ -15,8 +15,7 @@ page-layout: full
 ![](images/image-1982633316.png){width="184"}
 
 [J Andrés Gannon](https://jandresgannon.com/) is a [Stanton Nuclear Security Fellow](https://www.cfr.org/fellowships/stanton-nuclear-security-fellowship) at the [Council on Foreign Relations](https://www.cfr.org/) and a Non-resident Fellow at the [Eurasia Group Foundation](https://egfound.org/). Starting Fall 2023, he will be an Assistant Professor of [Political Science at Vanderbilt University](https://www.vanderbilt.edu/political-science/) and a Faculty Affiliate at the [Data Science Institute](https://www.vanderbilt.edu/datascience/). He earned his PhD in [[Political Science]{.underline}](http://polisci.ucsd.edu/) from UC San Diego in 2021.\
-[![](images/image-913165350.png){width="69"}](https://scholar.google.com/citations?user=81aHcOgAAAAJ&hl=en) [![](images/image-597146610.png){width="46"}](https://www.linkedin.com/in/j-andres-gannon-14906850/) [![](images/image-1865313780.png){width="41"}](mailto:andres.gannon@gmail.com)
-[![](images/image-1960859350.png){width="43"}](https://github.com/jandresgannon) [![](images/image-1576385032.png){width="51"}](https://twitter.com/AndresGannon) 
+[![](images/image-913165350.png){width="69"}](https://scholar.google.com/citations?user=81aHcOgAAAAJ&hl=en) [![](images/image-597146610.png){width="46"}](https://www.linkedin.com/in/j-andres-gannon-14906850/) [![](images/image-1865313780.png){width="41"}](mailto:andres.gannon@gmail.com) [![](images/image-1960859350.png){width="43"}](https://github.com/jandresgannon) [![](images/image-1576385032.png){width="51"}](https://twitter.com/AndresGannon)
 :::
 
 ## Research Assistants
