@@ -3,17 +3,10 @@ title: "Military Operations with Novel Strategic Technologies (MONSTr) Dataset"
 page-layout: full
 format:
   html:
-    toc: true
-    toc-location: right
     html-math-method: katex
     css: styles.css
     citations-hover: true
     footnotes-hover: true
-    code-tools: true
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: true
 editor: visual
 execute:
   echo: false
@@ -41,6 +34,8 @@ This website introduces a comprehensive dataset on the universe of United States
 MONSTr covers operation-level events occurring within the auspices of a military intervention. Each observation thus represents:
 
 *A series of tactical actions (battles, engagements, strikes) conducted by combat forces in an operational theater to achieve strategic or campaign objectives in the context of a political issue or dispute through action against a foreign adversary. Routine military movements and operations without a defined target like military training exercises, the routine forward deployment of military troops, non-combatant evacuation operations, and disaster relief are excluded.*
+
+The interactive map below shows the location of each US military operation. Zoom in or click on a node to get more information about a specific event.
 
 ```{r}
 # Prep actors for the map
@@ -121,6 +116,9 @@ center_lat <- mean(df$lat, na.rm = TRUE)
 # Plot with leaflet
 leaflet::leaflet() %>%
   leaflet::addTiles() %>%
-  leaflet::addCircleMarkers(data = df_sf, popup = df_sf$label, clusterOptions = leaflet::markerClusterOptions()) %>%
-  leaflet::setView(center_lon, center_lat, zoom = 2)
+  leaflet::addCircleMarkers(data = df_sf,
+                            popup = df_sf$label,
+                            popupOptions = leaflet::popupOptions(closeButton = TRUE),
+                            clusterOptions = leaflet::markerClusterOptions()) %>%
+  leaflet::setView(center_lon, center_lat, zoom = 3)
 ```

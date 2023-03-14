@@ -2,17 +2,10 @@
 title: Use with existing datasets
 format:
   html:
-    toc: true
-    toc-location: right
     html-math-method: katex
     css: styles.css
     citations-hover: true
     footnotes-hover: true
-    code-tools: true
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: true
 editor: visual
 execute:
   echo: false
@@ -46,11 +39,13 @@ MONSTr is fully interoperable with the following existing datasets:
 
 We identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.
 
+Click on the nodes below to see the events that are a "part of" each node:
+
 ```{r}
 read.csv(paste0(here::here(),"/content/data/tree_ops.csv")) %>%
   dplyr::filter(stringr::str_detect(row_operation, "_Q")) %>%
   dplyr::mutate(dplyr::across(everything(), stringr::str_remove_all, pattern = '_.*')) %>%
   collapsibleTree::collapsibleTree(hierarchy = c("level_2", "level_3", "level_4", "level_5", "level_6", "level_7", "level_8", "level_9"), 
                                    height = 20000, width = 8000, 
-                                   collapse = FALSE, zoomable = FALSE)
+                                   collapse = TRUE, zoomable = FALSE)
 ```

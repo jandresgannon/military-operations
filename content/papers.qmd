@@ -2,17 +2,10 @@
 title: Papers
 format:
   html:
-    toc: true
-    toc-location: right
     html-math-method: katex
     css: styles.css
     citations-hover: true
     footnotes-hover: true
-    code-tools: true
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: true
 editor: visual
 execute:
   echo: false
@@ -43,6 +36,8 @@ Kerry Chávez and J Andrés Gannon
 *Working paper*
 
 [Abstract]{.underline}: The traditional theory of democratic victory depicts democracies as superior warfighters because of their stringent selection into war and battlefield effectiveness. This finding does not seem to hold in unconventional contexts, which are increasingly common in the modern era. Existing literature cites military myopia, a cultural argument, and capital-rich force structures, an economic hypothesis. Both assume a flawed elite and fail to explain important variation in how democracies prosecute unconventional wars. We introduce a theory that combines the strategic incentives and constraints of political and military leaders to explain the conditions under which they select suboptimal strategies. Using original data on all US militarized interventions since 1989, we demonstrate that domestic political constraints constrict military planners to risk-mitigating strategies through high technology. High-tech approaches are usually poor counterstrategies in unconventional conflicts, resulting in not only reduced progress but retrogression of political objectives, even loss. This contributes to the literatures on the domestic politics of war, elite dynamics, and US foreign policy by examining the linkages between the public, elites, and international adversaries to provide a more comprehensive explanation for variation in the use of military force.
+
+[![ISA 2023](images/image-1124748587.png){fig-align="left" width="55"}](/content/files/2023-03-13_ChavezGannon_FightingWarRoom.pdf)
 
 **The Whole Package: The Tailoring of US Force Structure Combinations in Modern Warfare**
 

@@ -2,11 +2,8 @@ project:
   type: website
 
 website: 
-  page-navigation: true
+  navbar: false
   title: "MONSTr"
-  site-url: "https://military-operations.com" 
-  repo-url: "https://github.com/jandresgannon/military-operations"
-  repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
   page-footer:
@@ -27,7 +24,7 @@ website:
       - href: content/about.qmd
         text: About Us
       - href: content/wikipedia.qmd
-        text: Why and how wikipedia
+        text: On Wikipedia
       - href: content/existingdata.qmd
         text: Uses
       - href: content/papers.qmd
@@ -40,10 +37,6 @@ format:
     theme:
       light: [cosmo, theme.scss] 
       dark: [cosmo, theme-dark.scss]
-    code-copy: true
-    code-overflow: wrap
-    toc: true
-
 
 filters:
   - include-files.lua

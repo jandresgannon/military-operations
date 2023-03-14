@@ -3,16 +3,10 @@ title: Data
 format:
   html:
     page-layout: full
-    toc: false
     html-math-method: katex
     css: styles.css
     citations-hover: true
     footnotes-hover: true
-    code-tools: true
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: true
 editor: visual
 execute:
   echo: false
@@ -25,6 +19,8 @@ library(knitr)
 library(kableExtra)
 library(magrittr)
 library(ggplot2)
+
+df <- read.csv(paste0(here::here(), "/content/data/","MONSTr.csv"))
 ```
 
 This page contains the data as ready to use csv files. Replication code used for MONSTr and all related publications is publicly available at our downloadable github repository.
@@ -35,10 +31,26 @@ This page contains the data as ready to use csv files. Replication code used for
 [![Github Repo](images/image-1960859350.png){fig-align="left" width="113"}](https://github.com/jandresgannon/MONSTr)
 :::
 
+## Data summary
+
+The following table provides a summary of the variables coded for each military operations in MONSTr. Variables derived from those listed (logged, binary, etc) are not shown.
+
+| Type         | Variables                                                                                           |
+|--------------|-----------------------------------------------------------------------------------------------------|
+| Parent       | War, ICB, IMI, MID, MIP, MIPS, RAND                                                                 |
+| Time         | Start date, End date, Duration, Parent start date, Days into parent                                 |
+| Means        | Drones, Air-to-air, Cruise missiles, Aerial bombing, Close air support, Ground troops, Paramilitary |
+| Participants | US allies, Side B state belligerents, Side B non-state belligerents                                 |
+| Geography    | Latitude-longitude, Urban, Forested, Mountainous                                                    |
+| Casualties   | US, Side A, Side B, Civilian                                                                        |
+| Domestic     | US President, Political party, Election year, Approval rating                                       |
+
+## Full interactive data table
+
 Below is an interactive version of the full data that is searchable, sortable, and downloadable.
 
 ```{r}
-read.csv(paste0(here::here(), "/content/data/","MONSTr.csv")) %>%
+df %>%
   dplyr::select(wikidata_name, parent_name,
                 year, start_date, end_date,
                 duration, daysinto_parent,
@@ -62,9 +74,9 @@ read.csv(paste0(here::here(), "/content/data/","MONSTr.csv")) %>%
                                'FixedHeader',
                                'Scroller'),
                 options = list(order = list(list(2, 'asc')),
-                               autoWidth = TRUE,
+                               autoWidth = FALSE,
                                dom = 'Bfrtip',
-                               buttons = c('copy', 'csv', 'pdf'),
+                               buttons = c('copy', 'csv'),
                                scrollX = TRUE,
                                fixedColumns = list(leftColumns = 2),
                                fixedHeader = TRUE,
@@ -75,5 +87,4 @@ read.csv(paste0(here::here(), "/content/data/","MONSTr.csv")) %>%
   DT::formatStyle(c('year', 'start_date', 'end_date', 'duration', 'daysinto_parent'),  backgroundColor = 'orange') %>%
   DT::formatStyle(c('means_drones', 'means_airtoair', 'means_cruisemissiles', 'means_aerialbombing', 'means_closeairsupport', 'means_groundtroops', 'means_paramilitary'),  backgroundColor = 'lightblue') %>%
   DT::formatStyle(c('lat', 'lon', 'urban', 'forested', 'mountainous'),  backgroundColor = 'lightgreen')
-
 ```

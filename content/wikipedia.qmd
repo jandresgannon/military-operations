@@ -2,17 +2,10 @@
 title: Why and how wikipedia?
 format:
   html:
-    toc: true
-    toc-location: right
     html-math-method: katex
     css: styles.css
     citations-hover: true
     footnotes-hover: true
-    code-tools: true
-    code-fold: true
-    code-summary: "Show the code"
-    code-overflow: wrap
-    code-copy: true
 editor: visual
 execute:
   echo: false
@@ -21,7 +14,7 @@ execute:
 bibliography: citations.bib
 ---
 
-# Free knowledge for one and all
+## Free knowledge for one and all
 
 Created in 2007 as a way to crowd-source information, Wikipedia contains even more information than reaches the typical readers' eyes.
 
@@ -39,4 +32,4 @@ We scraped these two components of wikipedia for all pages on US military operat
 
 The resulting MONSTr is publicly available here. Initially a proof of concept of the viability and utility of using wikipedia to automate the process of structuring data about international events, future iterations of this particular project will investigate interventions further back in time and by actors other than the United States.
 
-For a broader project looking at wikipedia's coverage of named entities and all types of conflict, see @douglass_connectingconflictdata_2022.
+For a broader project looking at wikipedia's coverage of named entities and all types of conflict, see @douglass_connectingconflictdata_2022  [![Draft](images/image-1124748587.png){fig-align="left" width="55"}](/content/files/Connecting-Conflict-Data-Through-Wikimedia.pdf)
