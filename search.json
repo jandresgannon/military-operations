@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html#purpose",
-    "href": "index.html#purpose",
-    "title": "Military Operations with Novel Strategic Technologies (MONSTr) Dataset",
-    "section": "Purpose",
-    "text": "Purpose\nThis website introduces a comprehensive dataset on the universe of United States military operations from 1989-2021 from a single source: Wikipedia. Using automated extraction techniques on its two structured knowledge databases-Wikidata and DBpedia-we uncover information about individual operations within nearly every post-1989 military intervention described in existing academic datasets. The data we introduce offers unprecedented coverage and granularity that enables analysis of myriad factors associated with when, where, and how the United States employs military force.\nMONSTr covers operation-level events occurring within the auspices of a military intervention. Each observation thus represents:\nA series of tactical actions (battles, engagements, strikes) conducted by combat forces in an operational theater to achieve strategic or campaign objectives in the context of a political issue or dispute through action against a foreign adversary. Routine military movements and operations without a defined target like military training exercises, the routine forward deployment of military troops, non-combatant evacuation operations, and disaster relief are excluded.\nThe interactive map below shows the location of each US military operation. Zoom in or click on a node to get more information about a specific event."
-  },
-  {
     "objectID": "content/data.html",
     "href": "content/data.html",
     "title": "Data",
@@ -28,15 +21,22 @@
     "text": "Full interactive data table\nBelow is an interactive version of the full data that is searchable, sortable, and downloadable."
   },
   {
-    "objectID": "content/existingdata.html#disaggregating-military-interventions",
-    "href": "content/existingdata.html#disaggregating-military-interventions",
-    "title": "Use with existing datasets",
-    "section": "Disaggregating military interventions",
-    "text": "Disaggregating military interventions\nMONSTr is designed to augment existing military intervention datasets by disaggregating US military interventions into their component military operations. Doing so produces new fine-grained variables that can be combined with the existing datasets to answer important questions.\n\nMONSTr is fully interoperable with the following existing datasets:\n\nInternational Military Interventions (IMI) (Pearson and Baumann 1993; Kisangani and Pickering 2008; Pickering and Kisangani 2009)\nMilitary Interventions by Powerful States (MIPS) (Sullivan and Koch 2009)\nMilitary Interventions Project (MIP) (Kushi and Toft 2022)\nRAND Report on Characteristics of Successful U.S. Military Interventions (Kavanagh et al. 2019)\n\nWe identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.\nClick on the nodes below to see the events that are a “part of” each node:"
+    "objectID": "content/codebook.html",
+    "href": "content/codebook.html",
+    "title": "Codebook",
+    "section": "",
+    "text": "TBD. Link to codebook here."
   },
   {
     "objectID": "content/wikipedia.html",
     "href": "content/wikipedia.html",
+    "title": "Why and how Wikipedia?",
+    "section": "",
+    "text": "Created in 2007 as a way to crowd-source information, Wikipedia contains even more information than reaches the typical readers’ eyes.\nBehind Wikipedia are two structured Resource Description Framework (RDF) databases called Wikidata and DBpedia. Each have nice properties like identifying every Wikipedia page to a unique numeric ID and structuring each page’s relationship to other pages.\n\nWe scraped these two components of Wikipedia for all pages on US military operations after 1989 and were able to use Wikidata and DBpedia (which is based on the infoboxes at the top of each page) to create a machine-readable spreadsheet of relevant information about each event as well as the relationship between events.\n\n\n\n\n\n\n\n\n\n\nThe resulting MONSTr is publicly available here. Initially a proof of concept of the viability and utility of using Wikipedia to automate the process of structuring data about international events, future iterations of this particular project will investigate interventions further back in time and by actors other than the United States.\nFor a broader project looking at Wikipedia’s coverage of named entities and all types of conflict, see Douglass et al. (2022)"
+  },
+  {
+    "objectID": "content/wikipedia.html#free-knowledge-for-one-and-all",
+    "href": "content/wikipedia.html#free-knowledge-for-one-and-all",
     "title": "Why and how Wikipedia?",
     "section": "",
     "text": "Created in 2007 as a way to crowd-source information, Wikipedia contains even more information than reaches the typical readers’ eyes.\nBehind Wikipedia are two structured Resource Description Framework (RDF) databases called Wikidata and DBpedia. Each have nice properties like identifying every Wikipedia page to a unique numeric ID and structuring each page’s relationship to other pages.\n\nWe scraped these two components of Wikipedia for all pages on US military operations after 1989 and were able to use Wikidata and DBpedia (which is based on the infoboxes at the top of each page) to create a machine-readable spreadsheet of relevant information about each event as well as the relationship between events.\n\n\n\n\n\n\n\n\n\n\nThe resulting MONSTr is publicly available here. Initially a proof of concept of the viability and utility of using Wikipedia to automate the process of structuring data about international events, future iterations of this particular project will investigate interventions further back in time and by actors other than the United States.\nFor a broader project looking at Wikipedia’s coverage of named entities and all types of conflict, see Douglass et al. (2022)"
@@ -56,6 +56,13 @@
     "text": "Kerry Chávez is an instructor in the Department of Political Science at Texas Tech University, where she completed her PhD in the summer of 2022. She is also a Non-resident Fellow with the Modern War Institute at West Point and a projects director at the Peace, War, and Social Conflict Lab.\n  \n\n\n\n\n\n\n\nJ Andrés Gannon is a Stanton Nuclear Security Fellow at the Council on Foreign Relations and a Non-resident Fellow at the Eurasia Group Foundation. Starting Fall 2023, he will be an Assistant Professor of Political Science at Vanderbilt University and a Faculty Affiliate at the Data Science Institute. He earned his PhD in Political Science from UC San Diego in 2021."
   },
   {
+    "objectID": "content/about.html#project-directors",
+    "href": "content/about.html#project-directors",
+    "title": "About",
+    "section": "",
+    "text": "Kerry Chávez is an instructor in the Department of Political Science at Texas Tech University, where she completed her PhD in the summer of 2022. She is also a Non-resident Fellow with the Modern War Institute at West Point and a projects director at the Peace, War, and Social Conflict Lab.\n  \n\n\n\n\n\n\n\nJ Andrés Gannon is a Stanton Nuclear Security Fellow at the Council on Foreign Relations and a Non-resident Fellow at the Eurasia Group Foundation. Starting Fall 2023, he will be an Assistant Professor of Political Science at Vanderbilt University and a Faculty Affiliate at the Data Science Institute. He earned his PhD in Political Science from UC San Diego in 2021."
+  },
+  {
     "objectID": "content/about.html#research-assistants",
     "href": "content/about.html#research-assistants",
     "title": "About",
@@ -70,10 +77,31 @@
     "text": "Financial and Administrative Support\nThe authors are grateful to the following institutions and their directors for financial, administrative, and technical support.\n\n\n\n\n\nUCSD Center for Peace and Security Studies\n\n\n\n\n\n\nUCSD Undergraduate Research Apprenticeship Program\n\n\n\n\n\n\n\n\n\nDoD Minerva Initiative\n\n\n\n\n\n\nAPSA Centennial Center\n\n\n\n\nThis project is dedicated to its namesake, Monster, without whom it would have been completed 12 months earlier."
   },
   {
-    "objectID": "content/codebook.html",
-    "href": "content/codebook.html",
-    "title": "Codebook",
+    "objectID": "content/existingdata.html",
+    "href": "content/existingdata.html",
+    "title": "Use with existing datasets",
     "section": "",
-    "text": "TBD. Link to codebook here."
+    "text": "MONSTr is designed to augment existing military intervention datasets by disaggregating US military interventions into their component military operations. Doing so produces new fine-grained variables that can be combined with the existing datasets to answer important questions.\n\nMONSTr is fully interoperable with the following existing datasets:\n\nInternational Military Interventions (IMI) (Pearson and Baumann 1993; Kisangani and Pickering 2008; Pickering and Kisangani 2009)\nMilitary Interventions by Powerful States (MIPS) (Sullivan and Koch 2009)\nMilitary Interventions Project (MIP) (Kushi and Toft 2022)\nRAND Report on Characteristics of Successful U.S. Military Interventions (Kavanagh et al. 2019)\n\nWe identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.\nClick on the nodes below to see the events that are a “part of” each node:"
+  },
+  {
+    "objectID": "content/existingdata.html#disaggregating-military-interventions",
+    "href": "content/existingdata.html#disaggregating-military-interventions",
+    "title": "Use with existing datasets",
+    "section": "",
+    "text": "MONSTr is designed to augment existing military intervention datasets by disaggregating US military interventions into their component military operations. Doing so produces new fine-grained variables that can be combined with the existing datasets to answer important questions.\n\nMONSTr is fully interoperable with the following existing datasets:\n\nInternational Military Interventions (IMI) (Pearson and Baumann 1993; Kisangani and Pickering 2008; Pickering and Kisangani 2009)\nMilitary Interventions by Powerful States (MIPS) (Sullivan and Koch 2009)\nMilitary Interventions Project (MIP) (Kushi and Toft 2022)\nRAND Report on Characteristics of Successful U.S. Military Interventions (Kavanagh et al. 2019)\n\nWe identify the nested relationships among US operations. Which operations are a part of which broader operations? Under what wars do each of these operations fall? We match these data to existing interventions datasets that contain information about the broader interventions in which these operations occurred.\nClick on the nodes below to see the events that are a “part of” each node:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Military Operations with Novel Strategic Technologies (MONSTr) Dataset",
+    "section": "",
+    "text": "This website introduces a comprehensive dataset on the universe of United States military operations from 1989-2021 from a single source: Wikipedia. Using automated extraction techniques on its two structured knowledge databases-Wikidata and DBpedia-we uncover information about individual operations within nearly every post-1989 military intervention described in existing academic datasets. The data we introduce offers unprecedented coverage and granularity that enables analysis of myriad factors associated with when, where, and how the United States employs military force.\nMONSTr covers operation-level events occurring within the auspices of a military intervention. Each observation thus represents:\nA series of tactical actions (battles, engagements, strikes) conducted by combat forces in an operational theater to achieve strategic or campaign objectives in the context of a political issue or dispute through action against a foreign adversary. Routine military movements and operations without a defined target like military training exercises, the routine forward deployment of military troops, non-combatant evacuation operations, and disaster relief are excluded.\nThe interactive map below shows the location of each US military operation. Zoom in or click on a node to get more information about a specific event."
+  },
+  {
+    "objectID": "index.html#purpose",
+    "href": "index.html#purpose",
+    "title": "Military Operations with Novel Strategic Technologies (MONSTr) Dataset",
+    "section": "",
+    "text": "This website introduces a comprehensive dataset on the universe of United States military operations from 1989-2021 from a single source: Wikipedia. Using automated extraction techniques on its two structured knowledge databases-Wikidata and DBpedia-we uncover information about individual operations within nearly every post-1989 military intervention described in existing academic datasets. The data we introduce offers unprecedented coverage and granularity that enables analysis of myriad factors associated with when, where, and how the United States employs military force.\nMONSTr covers operation-level events occurring within the auspices of a military intervention. Each observation thus represents:\nA series of tactical actions (battles, engagements, strikes) conducted by combat forces in an operational theater to achieve strategic or campaign objectives in the context of a political issue or dispute through action against a foreign adversary. Routine military movements and operations without a defined target like military training exercises, the routine forward deployment of military troops, non-combatant evacuation operations, and disaster relief are excluded.\nThe interactive map below shows the location of each US military operation. Zoom in or click on a node to get more information about a specific event."
   }
 ]
