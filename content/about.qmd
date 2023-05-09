@@ -62,6 +62,8 @@ The authors are grateful to the following institutions and their directors for f
 ![DoD Minerva Initiative](images/image-2039311418.png){fig-align="left"}
 
 [![APSA Centennial Center](images/image-1745550880.png){fig-align="left" width="206"}](https://connect.apsanet.org/centennialcenter/)
+
+![Eurasia Group Foundation](images/EGF%20logo_green.png){fig-align="left" width="145"}
 :::
 
 This project is dedicated to its namesake, [Monster](https://www.instagram.com/monsterthefurocious/), without whom it would have been completed 12 months earlier.
