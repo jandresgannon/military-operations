@@ -17,7 +17,7 @@ execute:
 
 J Andrés Gannon and Kerry Chávez
 
-Conditionally accepted at *International Interactions*
+Forthcoming at *International Interactions*
 
 [Abstract]{.underline}: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants---domestic, international, geographic, temporal---of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data's contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.
 
