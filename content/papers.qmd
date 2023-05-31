@@ -13,11 +13,7 @@ execute:
   cache: true
 ---
 
-**A Wiki-based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)**
-
-J Andrés Gannon and Kerry Chávez
-
-Forthcoming at *International Interactions*
+**Gannon, J Andrés, and Kerry Chávez. "[A Wiki-Based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)](https://www.tandfonline.com/eprint/IKNAPFIW6U8SIV4CQK4D/full?target=10.1080/03050629.2023.2214845)." *International Interactions* 0(0) (May 30, 2023): 1--30. https://doi.org/10.1080/03050629.2023.2214845.**
 
 [Abstract]{.underline}: Research on strategies and force structures in modern warfare is prolific but siloed. While some examine boots on the ground, others focus on aerial bombing or unmanned platforms. Consequently, most studies focus on the effects of one approach, seldom considering it in lieu of or conjunction with others. Furthermore, there is less knowledge on the origins and implementations of these strategic choices analyzed in isolation. The primary reason for these gaps lies with data limitations. In this paper, we introduce the first comprehensive dataset on the universe of US military interventions from 1989-2019. Scraped from the understructure of Wikipedia using SPARQL, a database query language, we offer unprecedented coverage and granularity that enables analysis of myriad determinants---domestic, international, geographic, temporal---of how states fight. The data are also nested, providing opportunities to model interventions in the strategic campaigns and operations in which they were planned. We describe and demonstrate the data's contents and utility, then suggest how the novel, fine-grained information can contribute to theories about the effects of technological innovation on international conflict.
 

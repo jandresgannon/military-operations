@@ -25,6 +25,10 @@ df <- read.csv(paste0(here::here(), "/content/data/","MONSTr.csv"))
 
 This page contains the data as ready to use csv files. Replication code used for MONSTr and all related publications is publicly available at our downloadable github repository.
 
+For use of the data, please cite:
+
+Gannon, J Andrés, and Kerry Chávez. "A Wiki-Based Dataset of Military Operations with Novel Strategic Technologies (MONSTr)." *International Interactions* 0(0) (May 30, 2023): 1--30. https://doi.org/10.1080/03050629.2023.2214845.
+
 ::: {layout-ncol="2"}
 [![csv](images/image-1053309457.png){fig-align="left" width="113"}](/content/data/MONSTr.csv)
 

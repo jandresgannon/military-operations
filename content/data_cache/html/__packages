@@ -1,4 +1,10 @@
-rlang
+base
+methods
+datasets
+utils
+grDevices
+graphics
+stats
 knitr
 kableExtra
 magrittr
